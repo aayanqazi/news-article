@@ -8,7 +8,6 @@ describe("fetchMostViewedArticles", () => {
   });
 
   test("fetches articles successfully", async () => {
-
     const mockData = {
       data: {
         results: [
@@ -27,13 +26,13 @@ describe("fetchMostViewedArticles", () => {
     expect(result).toEqual(mockData.data.results);
   });
 
-  test('handles errors', async () => {
-    axios.get.mockRejectedValueOnce(new Error('Network Error'));
+  test("handles errors", async () => {
+    axios.get.mockRejectedValueOnce(new Error("Network Error"));
 
     const result = await fetchMostViewedArticles();
 
     expect(axios.get).toHaveBeenCalledWith(
-      `https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=${process.env.REACT_APP_API_KEY}`
+      `https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=${process.env.REACT_APP_API_KEY}`,
     );
     expect(result).toEqual([]);
   });
