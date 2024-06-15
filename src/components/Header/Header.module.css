@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  box-sizing: border-box;
+  height: 64px;
+  color: #cacdd4;
+  background-color: #111314;
+  line-height: 61px;
+  padding-left: 32px;
+}
+
+.header > a {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 64px;
+  padding: 0 12px 3px;
+  color: white;
+  text-decoration: none;
+}
+
+.header > a:hover {
+  text-decoration-line: underline;
+  transition: none;
+  color: #e56ab6;
+}

@@ -1,0 +1,36 @@
+.footer {
+  margin: 0;
+  border: none;
+  vertical-align: baseline;
+  text-align: center;
+  width: 100%;
+  padding: 11px 0;
+  font-size: 12px;
+  /* position: fixed;
+  bottom: 0px; */
+}
+
+.container {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.separator {
+  margin: 0 8px;
+  width: 1px;
+  height: 11px;
+  background-color: black;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  white-space: nowrap;
+  word-break: keep-all;
+}

@@ -1,0 +1,6 @@
+.articleList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  padding: 0 30px;
+}
