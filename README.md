@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# News Article
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React application that fetches and displays the most popular articles from the New York Times. It allows users to view a list of articles and see detailed information when an article is clicked.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Fetch and display the most popular articles from the New York Times.
+- View detailed information about an article.
+- Error handling for API calls.
+- Tests for components and API calls.
+- End to End testing for pages
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v16 or later)
+- An NY Times API key (sign up [here](https://developer.nytimes.com/get-started))
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+```sh
+git clone https://github.com/aayanqazi/news-article.git
+cd news-article
+```
+2. Install Dependencies:
+```sh
+npm install (if you are facing error so try to use npm install --force)
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Set up environment variables:
+Create a .env file in the root directory with the following content
+```sh
+REACT_APP_API_KEY=your-nyt-api-key
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the App:
+To start the development server, run
+```sh
+npm start
+```
+This will open the app in your default web browser at http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Building the App:
+To build the app for production, run
+```sh
+npm run build
+```
+This will create an optimized production build in the build folder.
 
-### `npm run eject`
+## Running Tests:
+To run the tests, use the following command
+```sh
+npm run test
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Generating Coverage Reports:
+To generate test coverage reports, run
+```sh
+npm run test:coverage
+```
+This will generate a coverage report in the coverage folder.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Running Cypress Tests
+To open the Cypress test runner, run:
+```sh
+npm run cy
+```
+To run Cypress tests in headless mode using Chrome, run:
+```sh
+npm run cy:run
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Linting
+To lint your JavaScript files, use the following command:
+```sh
+npm run lint
+```
+To fix linting issues automatically, run:
+```sh
+npm run lint:fix
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
